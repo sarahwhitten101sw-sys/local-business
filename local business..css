@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  * { 
+    font-family: 'Lato', sans-serif; 
+       padding: 0;
+        margin: 0;
+        box-sizing: border-box;                                                                                                                                                  
+    } 
+
+  html{
+    scroll-behavior: smooth;
+  } 
+
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+}
+
+body {
+  overflow-x: clip;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img.profile-picture-header {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
+}
+
+img.profile-picture-main {
+  width: clamp(6rem, 10vw, 8rem);
+  height: clamp(6rem, 10vw, 8rem);
+  flex: 0 0 auto;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
+}
+
+p.profile-quote-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transform: translateY(0.25rem);
+}
+
+.profile-heading {
+  transform: translateY(-25%);
+}
+
+a.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #031d35;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+a.contact-button:hover {
+  background-color: #904d00;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+a.contact-button:focus-visible {
+  outline: 3px solid #ffb77d;
+  outline-offset: 3px;
+}
+
+a.phone-link {
+  transition: color 0.2s ease;
+}
+
+a.phone-link:hover {
+  color: #904d00;
+  text-decoration: underline;
+}
+
+a.phone-link-dark:hover {
+  color: #ffb77d;
+}
+
+@media (max-width: 639px) {
+  header > div {
+    gap: 0.5rem;
+  }
+
+  header > div > div:first-child {
+    min-width: 0;
+    gap: 0.5rem;
+  }
+
+  header > div > div:last-child > img {
+    display: none;
+  }
+}
